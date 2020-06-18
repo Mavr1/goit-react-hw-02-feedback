@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from '../section/Section';
+import Notification from '../notification/Notification';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
   <Section name="Statistics">
@@ -12,7 +13,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
         <p>Positive feedback: {positivePercentage}</p>
       </div>
     ) : (
-      <p>No feedback given</p>
+      <Notification message={'No feedback given'} />
     )}
   </Section>
 );
