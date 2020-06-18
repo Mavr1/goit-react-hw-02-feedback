@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Button = ({ name, onVote }) => (
-  <button type="button" onClick={onVote}>
+  <button className="buttonVote" type="button" onClick={() => onVote(name)}>
     {name}
   </button>
 );

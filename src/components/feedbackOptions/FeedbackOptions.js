@@ -1,12 +1,11 @@
 import React from 'react';
 import Button from '../button/Button';
 
-const FeedbackOptions = ({ buttonsName }) => {
-  console.log(buttonsName);
+const FeedbackOptions = ({ buttonsName, onVote }) => {
   return (
     <div className="feedbackControls">
       {buttonsName.map((item) => (
-        <Button key={item} name={item} />
+        <Button key={item} name={item} onVote={onVote} />
       ))}
     </div>
   );
